@@ -232,7 +232,20 @@ body ul {
     }
 
     /* html genero */
+    @media only screen and (max-width:670px){
+        .barra_genero li{
+            font-size: 19px;
+        }
+    }
+    @media only screen and (max-width:538px){
+        .barra_genero li{
+            font-size: 11px;
+        }
+    }
     @media only screen and (max-width:574px){
+        .barra li{
+            font-size: 17px;
+        }
         .card{
             height: 2154px;
         }
@@ -264,7 +277,7 @@ body ul {
     }
     .barra li{
         width: 330px;
-        font-size: 17px;
+        font-size: 15px;
     }
     .card{
         height: 2249px;
@@ -280,14 +293,12 @@ body ul {
     }
 
     /* html para el genero */
-
     .barra_genero li{
-        font-size: 14px;
+        font-size: 12px;
         margin:8px;
         padding: 0px;
         display: flex;
         text-align: center;
-        justify-content: center;
         align-items: center;
     }
 }
