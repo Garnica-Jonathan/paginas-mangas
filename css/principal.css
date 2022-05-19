@@ -51,6 +51,8 @@ body ul {
 .barra{
     grid-area: barra;
     background: white;
+    position: sticky;
+    top: 0px;
 }
 .barra ul{
     display: flex;
@@ -140,7 +142,10 @@ body ul {
     align-items: center;
     color: black;
 }
+
+
 /* html del genero */
+
 
 .list_title{
     grid-area: list_title;
@@ -153,7 +158,8 @@ body ul {
 .sub_title div{ 
     height: 223px;
     width: 199px;
-    margin: 17px;
+    margin: 21px;
+    margin-top: 13px;
 }
 .sub_title img{
     height: 207px;
@@ -163,16 +169,18 @@ body ul {
 }
 .info{
     display: flex;
-    height: 20px;
+    height: 49px;
     width: 212px;
     text-align: center;
-    justify-content: center;
+    justify-content: center;;
+    align-items: center;
 }
 .sub_barra{
     margin: 9px;
     padding: 10px;
     font-size: 21px;
     margin-bottom: 0px;
+    padding-top: 25px;
 }
 
 @media only screen and (max-width: 768px){
