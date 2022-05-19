@@ -51,8 +51,6 @@ body ul {
 .barra{
     grid-area: barra;
     background: white;
-    position: sticky;
-    top: 0px;
 }
 .barra ul{
     display: flex;
@@ -146,7 +144,28 @@ body ul {
 
 /* html del genero */
 
+.barra_genero{
+    grid-area: barra;
+    background: white;
+    position: sticky;
+    top: 0px;
+    
+}
+.barra_genero ul{
+    display: flex;
+    height: 69px;
+    border-top: 3px solid #eaeaea;
+    border-bottom: 3px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+}
+.barra_genero li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
 
+}
 .list_title{
     grid-area: list_title;
     padding: 16px;
@@ -182,8 +201,15 @@ body ul {
     margin-bottom: 0px;
     padding-top: 25px;
 }
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1148px){
+    .card{
+        height: 1034px;
+    }
+    .sub_card{
+        height: 1034px;
+    }
+}
+@media only screen and (max-width: 1053px){
     #nav{
         display: flex;
         justify-content: space-around;
@@ -209,13 +235,28 @@ body ul {
         transform: scale(1.1,1.1);
         margin-bottom: 70px;
         margin-top: 70px;
-}
+    }
 
-
-
-
-
-@media only screen and (max-width:376px){
+    /* html genero */
+    @media only screen and (max-width:574px){
+        .card{
+            height: 2154px;
+        }
+        .sub_card {
+            height: 2203px;
+        }
+        .foo_contacto{
+            margin: 4px;
+           
+        }
+        .foo_contacto p{
+            font-size: 13px;
+        }
+    }
+@media only screen and (max-width:400px){
+    .logo{
+        margin: 12px;
+    }
     .nav{
         grid-area: header;
         justify-content: center;
@@ -225,7 +266,7 @@ body ul {
     .nav__ul-li {
         display: inline;
         margin: 10px;
-        width: 75px;
+        width: 60px;
     }
     .barra ul{
         display: flex;
@@ -244,7 +285,19 @@ body ul {
         margin: 10px 5px;
     }
     .foo_contacto p{
-        font-size: 13px;
+        font-size: 9px;
+    }
+
+    /* html para el genero */
+
+    .barra_genero li{
+        font-size: 14px;
+        margin:8px;
+        padding: 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
