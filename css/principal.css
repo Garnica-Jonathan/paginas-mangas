@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body ul {
+    list-style: none; }
+    body ul li a {
+      text-decoration: none;
+      color: black; }
+      body ul li a:hover {
+        color: black !important; }
+        
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__ul{
+
+    align-items: center;
+}
+.logo{
+    margin: 12px;
+    padding: 1px;
+    width: 65px;
+    height: 52px;
+}
+.nav__ul-li{
+    margin: 10px;
+    padding: 10px;
+    width: 161px;
+    border: 5px double;
+    border-radius: 30px;
+    text-align: center;
+}
+.img-princ{
+    grid-area: imagen;
+    width: 100%;
+    background-image: url(../imagenes/fondo_de_apuesta_de_amor.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.img-princ_img{
+    width: 50%;
+    margin: 10px;
+   padding: 10px;
+}
+.barra{
+    grid-area: barra;
+    background: white;
+}
+.barra ul{
+    display: flex;
+    height: 69px;
+    justify-content: center;
+    border-top: 3px solid #eaeaea;
+    border-bottom: 3px solid #eaeaea;
+}
+.barra li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+.card{
+    grid-area: card;
+    background-color: whitesmoke !important;
+    width: 1192px;
+    height: 709px;
+    margin: 0 auto;
+}
+.sub_card{
+    justify-content: center;
+    height: 706px;
+}
+.sub_card div{
+    list-style-type: none;
+    height: 236px;
+    width: 259px;
+    margin: 14px;
+}
+.sub_card div:hover{
+    background-color: gray;
+    transform: scale(1.1,1.1);
+}
+.card img{
+    height: 202px;
+    width: 201px;
+    margin: 16px;
+}
+.sub_card p{
+    height: 20px;
+    width: 201px;
+    text-align: center;
+    margin-left: 15px;
+} 
+.footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 50px 45px 50px;
+    grid-template-areas: 
+    "contacto"
+    "follow"
+    "copyright"
+    ;
+    background-color: #e5e5e5;
+}
+.foo_contacto{
+    grid-area: contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.foo_contacto div{
+    font-size: 25px;
+    margin: 10px 10px;
+}
+.foo_contacto p{
+    margin: 10px;
+}
+.foo_follow{
+    grid-area: follow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foo_follow img{
+    height: 16px;
+    width: 16px;
+    margin-left: 23px;
+}
+.foo_copyright{
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+/* html del genero */
+
+.list_title{
+    grid-area: list_title;
+    padding: 16px;
+    display: flex;
+    background-color: whitesmoke;
+    width: 1213px;
+    margin: 0 auto;
+}
+.sub_title div{ 
+    height: 223px;
+    width: 199px;
+    margin: 17px;
+}
+.sub_title img{
+    height: 207px;
+    width: 187px;
+    margin-left: 6px;
+    margin-top: 9px;
+}
+.info{
+    display: flex;
+    height: 20px;
+    width: 212px;
+    text-align: center;
+    justify-content: center;
+}
+.sub_barra{
+    margin: 9px;
+    padding: 10px;
+    font-size: 21px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px){
+    #nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 36px;
+        height: 40px;
+        margin: 24px;
+        padding: 1px;
+    }
+    .nav__ul-li{
+        width: 85px;
+        border: 1px double;
+    }
+    .card{
+        height: 1250px;
+    }
+    .sub_card{
+        height: 1180px;
+    }
+    .sub_card div:hover{
+        background-color: gray;
+        transform: scale(1.1,1.1);
+        margin-bottom: 70px;
+        margin-top: 70px;
+}
+
+
+
+
+
+@media only screen and (max-width:376px){
+    .nav{
+        grid-area: header;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4px;
+    }
+    .nav__ul-li {
+        display: inline;
+        margin: 10px;
+        width: 75px;
+    }
+    .barra ul{
+        display: flex;
+    }
+    .barra li{
+        width: 330px;
+        font-size: 21px;
+    }
+    .card{
+        height: 2249px;
+    }
+    .sub_card{
+        height: 2150px;
+    }
+    .foo_contacto div{
+        margin: 10px 5px;
+    }
+    .foo_contacto p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
