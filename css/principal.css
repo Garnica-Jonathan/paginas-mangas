@@ -149,7 +149,7 @@ body ul {
     background: white;
     position: sticky;
     top: 0px;
-    
+    z-index: 100;
 }
 .barra_genero ul{
     display: flex;
@@ -175,10 +175,14 @@ body ul {
     margin: 0 auto;
 }
 .sub_title div{ 
-    height: 223px;
-    width: 199px;
-    margin: 21px;
+    height: 225px;
+    width: 222px;
+    margin: 9px;
     margin-top: 13px;
+}
+.sub_title div:hover{
+    background-color: gray;
+    transform: scale(1.1,1.1);
 }
 .sub_title img{
     height: 207px;
