@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+    <nav class=" navbar  navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">
             <img src="imagenes/logo/libro.png" alt="logo" class="logo">
@@ -21,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Popular</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,16 +53,26 @@
           </div>
         </div>
       </nav>
-        <div class="img-princ container-fluid px-0 ">
-			    <img src="imagenes/romance/apuesta_de_amor.jpg" class="img-princ_img">
-	    </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/romance/Los-niños-del-mar.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="imagenes/romance/El-amor-está-en-el-agua.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="imagenes/aventura/Demon_Slayer_Kimetsu_no_Yaiba.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
     <div class="barra container-fluid px-0 ">
-        <ul>
+        <ul class="d-flex justify-content-center">
             <li>Capitulos actualizados de la semana</li>
         </ul>
     </div>
     <div class="card container-xxl ">
-        <div class=" sub_card row ">
+        <div class=" sub_card d-flex justify-content-center row ">
             <div class="col-2"> 
                 <img src="imagenes/romance/Secretos_de belleza.jpg" alt="Secretos de belleza">
                  <p>Secretos de belleza</p>
@@ -78,28 +87,28 @@
             </div>
             <div class="col-2">
                 <img src="imagenes/romance/El-tiempo-contigo.jpg" alt="El tiempo contigo">
-				<p>El tiempo contigo</p>
+				        <p>El tiempo contigo</p>
             </div>
             <div class="col-2">
                 <img src="imagenes/romance/Los-niños-del-mar.jpg" alt="Los niños del mar">
-				<p>Los niños del mar</p>
+				        <p>Los niños del mar</p>
             </div>
             <div class="col-2">
                 <img src="imagenes/comedia/tensei_shitara_slime_datta_ken_ibun_makuni_kurashi_no_trinity.jpg" alt="tensei shitara slime datta ken ibun makuni kurashi no trinity">
-				<p>Tensei shitara slime datta ken ibun makuni kurashi no trinity</p>
+				        <p>Tensei shitara slime datta ken ibun makuni kurashi no trinity</p>
             </div>
             <div class="col-2">
                 <img src="imagenes/aventura/Demon_Slayer_Kimetsu_no_Yaiba.jpg" alt="Demon Slayer Kimetsu no Yaiba">
-				<p>Demon Slayer Kimetsu no Yaiba</p>
+				        <p>Demon Slayer Kimetsu no Yaiba</p>
             </div>
             <div class="col-2">
                 <img src="imagenes/aventura/KONOSUBA.jpg" alt="KONOSUBA">
-				<p>Konosuba</p>
+				        <p>Konosuba</p>
             </div>
         </div>
     </div>
     <div class="footer container-fluid px-0">
-        <div class="foo_contacto">
+        <div class="foo_contacto d-flex justify-content-center align-items-center">
             <p>Acerca de..</p>
             <div>|</div>
             <P>Opiniones</P>
@@ -109,13 +118,13 @@
             <p>Terminos</p>
             <div>|</div>
         </div>
-        <div class="foo_follow ">
+        <div class="foo_follow d-flex justify-content-center align-items-center">
             <img src="imagenes/logo/logotipo-de-instagram.png" alt="logo_instagram">
             <img src="imagenes/logo/twitter.png" alt="logo_twitter">
             <img src="imagenes/logo/facebook.png" alt="logo_facebook">
             <img src="imagenes/logo/youtube.png" alt="logo_youtube">
         </div>
-        <div class="foo_copyright">copyright</div>
+        <div class="foo_copyright d-flex justify-content-center align-items-center">copyright</div>
     </div>
 
 
@@ -123,5 +132,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>
