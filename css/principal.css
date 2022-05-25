@@ -1,4 +1,6 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,8 +11,11 @@ body ul {
       text-decoration: none;
       color: black; }
       body ul li a:hover {
-        color: black !important; }
-        
+        color: black !important;
+     }
+.navbar{
+    font-family: 'Noto Serif', serif;
+} 
 .logo{
     width: 65px;
     height: 52px;
@@ -18,12 +23,13 @@ body ul {
     padding: 1px;
 }
 .slide img{
- height: 500px;
+    height: 500px;
 }
 .barra ul{
     height: 69px;
     border-top: 3px solid #eaeaea;
     border-bottom: 3px solid #eaeaea;
+    font-family: 'Noto Serif', serif;
 }
 .barra li{
     list-style-type: none;
@@ -33,21 +39,10 @@ body ul {
 }
 .card{
     background-color: whitesmoke !important;
-    width: 1192px;
-    height: 680px;
+    height: 608px;
     margin: 0 auto;
 }
-.sub_card{
-    height: 680px;
-}
-.sub_card div{
-    list-style-type: none;
-    height: 236px;
-    width: 259px;
-    margin: 14px;
-}
 .sub_card div:hover{
-    background-color: gray;
     transform: scale(1.1,1.1);
 }
 .card img{
@@ -60,6 +55,8 @@ body ul {
     width: 201px;
     text-align: center;
     margin-left: 15px;
+    
+    font-family: 'Noto Sans HK', sans-serif;
 } 
 .footer{
     display: grid;
@@ -108,7 +105,6 @@ body ul {
     z-index: 100;
 }
 .barra_genero ul{
-    height: 69px;
     border-top: 3px solid #eaeaea;
     border-bottom: 3px solid #eaeaea;
     align-items: center;
@@ -117,7 +113,7 @@ body ul {
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 23px;
 
 }
 .list_title{
@@ -127,15 +123,7 @@ body ul {
     width: 1213px;
     margin: 0 auto;
 }
-
-.sub_title div{ 
-    height: 269px;
-    width: 222px;
-    margin: 9px;
-    margin-top: 13px;
-}
 .sub_title div:hover{
-    background-color: gray;
     transform: scale(1.1,1.1);
 }
 .sub_title img{
@@ -148,9 +136,9 @@ body ul {
     display: flex;
     height: 49px;
     width: 193px;
-    text-align: center;
-    justify-content: center;;
+    justify-content: center;
     align-items: center;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 .sub_barra{
     margin: 9px;
@@ -159,26 +147,19 @@ body ul {
     margin-bottom: 0px;
     padding-top: 25px;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 990px){
     .card{
-        height: 1034px;
-    }
-    .sub_card{
-        height: 1034px;
+        height: 852px;
     }
 }
-@media only screen and (max-width: 1053px){
-    .card{
-        height: 1250px;
-    }
-    .sub_card{
-        height: 1180px;
-    }
+@media only screen and (max-width: 767px){
     .sub_card div:hover{
-        background-color: gray;
         transform: scale(1.1,1.1);
         margin-bottom: 70px;
         margin-top: 70px;
+    }
+    .card{
+        height: 1119px;
     }
 
     /* html genero */
@@ -214,7 +195,7 @@ body ul {
 
     /* html para el genero */
     .barra_genero li{
-        font-size: 12px;
+        font-size: 17px;
         margin:8px;
         padding: 0px;
         text-align: center;
